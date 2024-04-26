@@ -14,7 +14,9 @@ function Formulario (){
                     placeholder="O que você quer estudar?"
                 />
             </div>
-            <Botao/>
+            <Botao
+                texto='adicionar'
+            />
             <div className="inputContainer">
                 <label htmlFor="tempo">
                     tempo
@@ -29,7 +31,9 @@ function Formulario (){
                     required
                 />
             </div>
-            <Botao/>
+            <Botao
+                texto = 'adicionar'
+            />
         </form>
     )
 } 
