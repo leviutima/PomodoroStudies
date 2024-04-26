@@ -10,14 +10,9 @@ import Cronometro from '../components/Cronometro/Index';
 function App() {
   return (
     <div className="AppStyle">
-      <header className="App-header">
         <Formulario/>
         <Cronometro/>
         <Lista/>
-        
-        
-        
-      </header>
     </div>
   );
 }

@@ -37,7 +37,6 @@
   margin-bottom: 8px;
   position: relative;
   cursor: pointer;
-}
 
   h3 {
     margin-bottom: 8px;
@@ -51,6 +50,7 @@
   @media screen and (min-width:1280px) {
     font-size: 1.8rem;
   }
+}
 
 .itemSelecionado {
   background-color: #292929;
