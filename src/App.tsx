@@ -1,4 +1,6 @@
 import React from 'react';
+import Botao from './components/Botao/Index';
+import Formulario from './components/Formulario/Index';
 
 
 
@@ -6,7 +8,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>ola mundio</h1>
+        <Formulario/>
       </header>
     </div>
   );
