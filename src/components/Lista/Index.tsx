@@ -2,7 +2,7 @@
 function Lista (){
     const tarefas = [{
         tarefa: 'react',
-        tempo: '02:00:00'
+        tempo: '02:00:00',
     },{
         tarefa: 'typescript',
         tempo: '01:00:00'
@@ -18,7 +18,7 @@ function Lista (){
             <h2>Estudos do dia</h2>
             <ul>
                 {tarefas.map((item, index) => (
-                      <li>
+                      <li key={index}>
                         <h3>
                             {item.tarefa}
                         </h3>

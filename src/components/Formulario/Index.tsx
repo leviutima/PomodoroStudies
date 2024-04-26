@@ -1,9 +1,10 @@
 import Botao from "../Botao/Index"
+import './style.scss'
 
 function Formulario (){
     return(
-        <form>
-            <div>
+        <form className="novaTarefa">
+            <div className="inputContainer">
                 <label htmlFor="tarefa">
                     adicione um novo estudo
                 </label>
@@ -14,7 +15,7 @@ function Formulario (){
                 />
             </div>
             <Botao/>
-            <div>
+            <div className="inputContainer">
                 <label htmlFor="tempo">
                     tempo
                 </label>

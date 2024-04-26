@@ -1,6 +1,8 @@
+import styles from './Botao.module.css'
+
 function Botao () {
     return(
-        <button>Clique aqui</button>
+        <button className={styles.botao}>Clique aqui</button>
     )
 }
 
