@@ -1,18 +1,22 @@
 import React, { useState } from "react"
 import Botao from "../Botao/Index"
 import './style.scss'
+import { Tarefa } from "../../types/tarefa";
 
 
-class Formulario extends React.Component {
+class Formulario extends React.Component<{
+    setTarefas: React.Dispatch<React.SetStateAction<Tarefa[]>>}> 
 
-    state =  {
+    {   
+        state =  {
         tarefa:'',
         tempo: '00:00'
     };
 
     adicionarTarefa(evento: React.FormEvent<HTMLFormElement>){
         evento.preventDefault();
-        console.log('state: ', this.state)
+        this.props.setTarefas(tarefasAntigas => [...tarefasAntigas, {...this.state}])
+        console.log('state', this.state)
     }
 
     render(){
