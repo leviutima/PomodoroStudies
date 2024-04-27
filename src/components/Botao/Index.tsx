@@ -1,11 +1,19 @@
 import styles from './Botao.module.css'
 
-type Props = {texto: String}
+interface Props {
+    type?: 'button' | 'submit' | 'reset' | undefined,
+    onClick?: () => void,
+    children?: React.ReactNode
+}
 
-function Botao (props: Props) {
+function Botao ({ onClick, type, children}: Props) {
     return(
-        <button className={styles.botao}>
-            {props.texto}
+        <button
+            onClick={onClick}
+            type={type} 
+            className={styles.botao}
+        >
+        {children}
         </button>
     )
 }

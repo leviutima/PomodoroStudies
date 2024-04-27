@@ -11,9 +11,9 @@ function Cronometro () {
             <div className={style.relogioWrapper}>
                 <Relogio/>
             </div>
-            <Botao
-                texto='Iniciar'
-            />
+            <Botao>
+                Iniciar
+            </Botao>
             </div>
         </>
     )
